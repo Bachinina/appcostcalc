@@ -1,0 +1,267 @@
+.main {
+  max-width: 90%;
+  margin: auto;
+  color: #373e52;
+}
+
+.main__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  animation: opacity 600ms;
+}
+
+.main__container--result {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.main__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.main__svg {
+  width: 100px;
+  height: 101px;
+}
+
+.main__title {
+  margin: 15px;
+  font-size: 2.8125em;
+  font-weight: 400;
+  line-height: 1.06667em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main__desc {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.main__start-button {
+  padding: 21px 40px;
+}
+
+.main__start-button::after {
+  width: 180px;
+  height: 60px;
+}
+
+.main__question-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-bottom: 31px;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+}
+
+.main__question-svg {
+  width: 60px;
+  height: 60px;
+}
+
+.main__question-title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 2.8125em;
+  font-weight: 400;
+  line-height: 1.06667em;
+  text-align: center;
+}
+
+.main__question-desc {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0;
+  margin-bottom: 45px;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.main__question-buttons {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.main__question-button {
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #373e52;
+  cursor: pointer;
+  outline: none;
+}
+
+.main__question-button:hover {
+  opacity: 0.9;
+}
+
+.main__result {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);;
+}
+
+.main__result-container {
+  padding: 16px;
+}
+
+.main__result-title {
+  margin: 0;
+  margin-left: -.04em;
+  margin-bottom: 16px;
+  font-size:  2.8125em;
+  font-weight: 400;
+  line-height: 1.06667em;
+}
+
+.main__result-price {
+  display: block;
+  margin-left: -.04em;
+  font-size: 3.5em;
+  font-weight: 500;
+  letter-spacing: -.02em;
+  line-height: 1.30357em;
+  color: #ff5722;
+}
+
+.main__result-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__result-asterisk {
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 1.375em;
+}
+
+.main__result-button,
+.main__info-button {
+  box-sizing: border-box;
+  align-self: center;
+  min-width: 88px;
+  min-height: 36px;
+  padding: 8px 16px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  color: #e64a19;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer; 
+}
+
+.main__result-button:hover,
+.main__info-button:hover {
+	background-color: rgba(230, 74, 25, 0.12);
+  transition: background-color 250ms;
+}
+
+.main__result-button:active,
+.main__info-button:active {
+	background-color: rgba(230, 74, 25, 0.3);
+  transition: background-color 250ms;
+}
+
+.main__feedback {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main__feedback-item {
+	width: 218px;
+  margin: 16px;
+  margin-bottom: 8px;
+}
+
+.main__feedback-button {
+  align-self: flex-end;
+  margin-bottom: 5px;
+  padding: 8px 16px;
+  padding-top: 7px;
+  line-height: 1.4em;
+}
+
+.main__feedback-button::after {
+  width: 218px;
+  height: 36px;
+}
+
+.main__info {
+  padding: 5px 16px;
+  padding-bottom: 24px;
+}
+
+.main__info-description {
+  margin: 0;
+  margin-top: 6px;
+  line-height: 1.5em;
+}
+
+.main--result .main__svg {
+  margin: 32px;
+}
+
+.main__sent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 0.875em;
+  font-weight: 500;
+  line-height: 1.71429em;
+  color: #373e52;
+}
+
+.main__sent svg{
+  width: 24px;
+  height: 24px;
+  fill: #4acc9a;
+}
+
+@media(min-width: 900px) {
+  .main {
+    max-width: 800px;
+    font-size: 18px;
+  }
+  
+  .main__info {
+    padding-top: 10px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .main {
+    font-size: 20px;
+  }
+
+  .main__question-desc {
+    padding: 0 10px;
+  }
+}

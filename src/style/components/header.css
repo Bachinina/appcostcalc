@@ -1,0 +1,90 @@
+.header {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 72px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: #373e52;
+}
+
+.header__button {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__button::after {
+  position: absolute;
+	top: 0;
+  left: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	content: '';
+	opacity: 0;
+  background: rgba(255,255,255,0.1);
+  color: #ffffff;
+}
+
+.header__button:active::after {
+	animation: click 225ms;
+}
+
+.header__button svg {
+  width: 40px;
+  height: 40px;
+  fill: #f1f1f1;
+}
+
+.header__button--restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.header__button--restart::after {
+  width: 160px;
+}
+
+.header__price {
+  flex: 1;
+  margin: 0;
+  margin-left: -.04em;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.303579em;
+  letter-spacing: -.02em;
+  text-align: center;
+  color: #ff5722;
+  animation: move 225ms;
+}
+
+.header__step-progress {
+  font-family: sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media(min-width: 900px) {
+  .header__price {
+    font-size: 63px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .header {
+    font-size: 20px;
+  }
+
+  .header__price {
+    font-size: 3.5em;
+  }
+}
